@@ -31,3 +31,15 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+.classic-tbl{
+  border-collapse: collapse;
+  width: 100%;
+}
+td,th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th:hover{
+cursor: pointer;
+}
