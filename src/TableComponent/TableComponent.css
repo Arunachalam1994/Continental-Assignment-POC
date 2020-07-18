@@ -1,0 +1,20 @@
+.tblView1{
+    margin: auto;
+    width: 80%;
+    height: 20vh;
+    overflow: auto;
+    height: 100vh;
+    margin-top: 150px;
+
+  }
+  .classic-tbl{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th:hover{
+  cursor: pointer;
+  }

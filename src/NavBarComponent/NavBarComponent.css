@@ -1,0 +1,14 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fea500;
+    display: flex;
+    top : 0;
+    z-index: 9;
+    /* align-items: center; */
+    justify-content: center;
+  }
+ 
+
+
+
