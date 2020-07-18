@@ -116,20 +116,20 @@ function TableComponent() {
   return (
     <div className="tblView1" >
     <h4>Table with sorting , filtering and search</h4>
-    <div style={{display: "flex","flex-direction": "row-reverse",marginBottom:"10px"}}>
+    <div className="HeaderTbl">
       <input type="text" placeholder="search here..." onChange={(event)=> mainFilterFn("GenricFilter",event.target.value,null)} />
     </div>
    <table className="classic-tbl">
      <thead>
        <tr>
-         {tblHeaderTemplate.length !== 0 ? tblHeaderTemplate :""}
+         {tblHeaderTemplate.length !== 0 ? tblHeaderTemplate :(<th></th>)}
        </tr>
      </thead>
      <tbody>
        <tr>
-         {filterInputBox.length !==0 ? filterInputBox : ""}
+         {filterInputBox.length !==0 ? filterInputBox : (<td></td>)}
        </tr>
-      {purchaseData.length !== 0 ? tblContent : ""}
+      {purchaseData.length !== 0 ? tblContent : (<tr></tr>)}
      </tbody>
    </table>
  </div>
