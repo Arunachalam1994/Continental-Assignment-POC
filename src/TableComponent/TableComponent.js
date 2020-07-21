@@ -14,14 +14,14 @@ function TableComponent() {
   const [sortDet,setSortDet] = useState({});             // Sort Details
   const [tableHeader,setTableHeader] = useState([]);     // Table Header   
 
-  const sortedItems = React.useMemo(() => {
-      let sortedProducts = filterData;
+  useEffect(() => {
+      let sortedProducts = [...filterData];
       sortedProducts.sort((a, b) => {
       if (a[sortDet.key] < b[sortDet.key]) return sortDet.direction === 'asc' ? -1 : 1;
       if (a[sortDet.key] > b[sortDet.key]) return sortDet.direction === 'asc' ? 1 : -1;
       return 0;
       });
-      setPurchaseData(sortedProducts);
+      setFilterData(sortedProducts);
     },[sortDet])
 
   useEffect(()=>{
